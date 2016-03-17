@@ -225,12 +225,13 @@ function testsChart() {
         $('.test-others-count').text(others);
     }
     else {
+    	/* exchanged colors for Error and Skip */
         data = [
             { value: passed, color: '#00af00', highlight: '#32bf32', label: 'Pass' },
             { value: failed, color:'#F7464A', highlight: '#FF5A5E', label: 'Fail' },
-            { value: errors, color:'#ff6347', highlight: '#ff826b', label: 'Error' },
+            { value: errors, color:'#1e90ff', highlight: '#4aa6ff', label: 'Error' },
             { value: inconclusive, color: '#FDB45C', highlight: '#FFC870', label: 'Warning' },
-            { value: skipped, color: '#1e90ff', highlight: '#4aa6ff', label: 'Skip' }
+            { value: skipped, color: '#ff6347', highlight: '#ff826b', label: 'Skip' }
         ];
         
         $('.test-others-count').text(errors + inconclusive + skipped);
