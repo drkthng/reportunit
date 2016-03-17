@@ -183,9 +183,10 @@ function suitesChart() {
 	var data = [
 		{ value: passed, color: '#00af00', highlight: '#32bf32', label: 'Pass' },
 		{ value: failed, color:'#F7464A', highlight: '#FF5A5E', label: 'Fail' },
-		{ value: $('.suite-result.error').length, color:'#ff6347', highlight: '#ff826b', label: 'Error' },
+/* exchanged colors for Error and Skip */
+		{ value: $('.suite-result.error').length, color:'#1e90ff', highlight: '#4aa6ff', label: 'Error' },
 		{ value: $('.suite-result.inconclusive').length, color: '#FDB45C', highlight: '#FFC870', label: 'Warning' },
-		{ value: $('.suite-result.skipped').length, color: '#1e90ff', highlight: '#4aa6ff', label: 'Skip' }
+		{ value: $('.suite-result.skipped').length, color: '#ff6347', highlight: '#ff826b', label: 'Skip' }
 	];
 	
 	var ctx = $('#suite-analysis').get(0).getContext('2d');
