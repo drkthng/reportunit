@@ -452,7 +452,8 @@ td > .label {
 	background-color: #FF5A5E !important;
 }
 .progress-bar-skip {
-	background-color: #46BFBD !important;
+	/* original value: #46BFBD */
+	background-color: #88D0FF !important;
 }
 .progress-bar2 {
 	background-color: #337ab7;
