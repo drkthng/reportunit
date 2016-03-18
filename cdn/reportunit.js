@@ -184,9 +184,9 @@ function suitesChart() {
 		{ value: passed, color: '#00af00', highlight: '#32bf32', label: 'Pass' },
 		{ value: failed, color:'#F7464A', highlight: '#FF5A5E', label: 'Fail' },
 /* exchanged colors for Error and Skip */
-		{ value: $('.suite-result.error').length, color:'#1e90ff', highlight: '#4aa6ff', label: 'Error' },
-		{ value: $('.suite-result.inconclusive').length, color: '#FDB45C', highlight: '#FFC870', label: 'Warning' },
-		{ value: $('.suite-result.skipped').length, color: '#ff6347', highlight: '#ff826b', label: 'Skip' }
+		{ value: $('.suite-result.error').length, color:'#FDB45C', highlight: '#FFC870', label: 'Error' },
+		{ value: $('.suite-result.inconclusive').length, color: '#74C5FC', highlight: '#88d0ff', label: 'Warning' },
+		{ value: $('.suite-result.skipped').length, color: '#74C5FC', highlight: '#88d0ff', label: 'Skip' }
 	];
 	
 	var ctx = $('#suite-analysis').get(0).getContext('2d');
@@ -219,7 +219,7 @@ function testsChart() {
         data = [
             { value: passed, color: '#00af00', highlight: '#32bf32', label: 'Pass' },
             { value: failed, color:'#F7464A', highlight: '#FF5A5E', label: 'Fail' },
-            { value: others, color: '#1e90ff', highlight: '#4aa6ff', label: 'Others' }
+            { value: others, color: '#74C5FC', highlight: '#88d0ff', label: 'Others' }
         ];
         
         $('.test-others-count').text(others);
@@ -229,9 +229,9 @@ function testsChart() {
         data = [
             { value: passed, color: '#00af00', highlight: '#32bf32', label: 'Pass' },
             { value: failed, color:'#F7464A', highlight: '#FF5A5E', label: 'Fail' },
-            { value: errors, color:'#1e90ff', highlight: '#4aa6ff', label: 'Error' },
-            { value: inconclusive, color: '#FDB45C', highlight: '#FFC870', label: 'Warning' },
-            { value: skipped, color: '#ff6347', highlight: '#ff826b', label: 'Skip' }
+            { value: errors, color:'#FDB45C', highlight: '#FFC870', label: 'Error' },
+            { value: inconclusive, color: '#74C5FC', highlight: '#88d0ff', label: 'Warning' },
+            { value: skipped, color: '#74C5FC', highlight: '#88d0ff', label: 'Skip' }
         ];
         
         $('.test-others-count').text(errors + inconclusive + skipped);
