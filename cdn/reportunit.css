@@ -419,10 +419,12 @@ td > .label {
 	background-color: #FF5A5E !important;
 }
 .progress-bar-skip {
-	background-color: #46BFBD !important;
+	/* original: #46BFBD*/
+	background-color: #88D0FF !important;
 }
 .progress-bar2 {
-	background-color: #337ab7;
+	/* original: #337ab7*/
+	background-color: #88D0FF;
 	box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
 	color: #fff;
 	float: left;
