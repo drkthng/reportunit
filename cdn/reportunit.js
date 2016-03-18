@@ -184,7 +184,7 @@ function suitesChart() {
 		{ value: passed, color: '#00af00', highlight: '#32bf32', label: 'Pass' },
 		{ value: failed, color:'#F7464A', highlight: '#FF5A5E', label: 'Fail' },
 /* exchanged colors for Error and Skip */
-		{ value: $('.suite-result.error').length, color:'#FDB45C', highlight: '#FFC870', label: 'Error' },
+		{ value: $('.suite-result.error').length, color:'#FFBF46', highlight: '#FFC870', label: 'Error' },
 		{ value: $('.suite-result.inconclusive').length, color: '#74C5FC', highlight: '#88d0ff', label: 'Warning' },
 		{ value: $('.suite-result.skipped').length, color: '#74C5FC', highlight: '#88d0ff', label: 'Skip' }
 	];
@@ -229,7 +229,7 @@ function testsChart() {
         data = [
             { value: passed, color: '#00af00', highlight: '#32bf32', label: 'Pass' },
             { value: failed, color:'#F7464A', highlight: '#FF5A5E', label: 'Fail' },
-            { value: errors, color:'#FDB45C', highlight: '#FFC870', label: 'Error' },
+            { value: errors, color:'#FFBF46', highlight: '#FFC870', label: 'Error' },
             { value: inconclusive, color: '#74C5FC', highlight: '#88d0ff', label: 'Warning' },
             { value: skipped, color: '#74C5FC', highlight: '#88d0ff', label: 'Skip' }
         ];
