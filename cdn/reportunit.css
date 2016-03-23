@@ -368,8 +368,8 @@ p.description {
 	color: #60b963;
 }
 .label.error { 
-	border-color: #ec407a;
-	color: #ec407a;
+	border-color: #d88519;
+	color: #d88519;
 }
 .label.warning, .label.bad, .label.inconclusive, .label.pending, .label.notrunnable, .label.disconnected, .label.passedbutrunaborted { 
 	border-color: #d88519;
